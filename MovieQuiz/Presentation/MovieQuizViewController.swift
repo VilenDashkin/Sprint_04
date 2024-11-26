@@ -157,8 +157,8 @@ final class MovieQuizViewController: UIViewController {
     }
     
     private func resetImageViewStyle() {
-        imageView.layer.borderWidth = 0 // Убираем границу
-        imageView.layer.borderColor = nil // Сбрасываем цвет
+        imageView.layer.borderWidth = 0
+        imageView.layer.borderColor = nil
     }
     
     private func resetQuiz() {
