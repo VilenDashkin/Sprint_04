@@ -26,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="miN-KG-WFr">
-                                <rect key="frame" x="20" y="58" width="374" height="749"/>
+                                <rect key="frame" x="20" y="58" width="374" height="724"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIG-N3-lKA">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
@@ -51,9 +51,14 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="PJd-fR-F7v" secondAttribute="height" multiplier="2:3" id="Eac-sy-JDx"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейтинг этого фильма меньше, чем 5?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPX-1c-VJM" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="624.5" width="374" height="124.5"/>
+                                        <rect key="frame" x="0.0" y="624.5" width="374" height="99.5"/>
                                         <fontDescription key="fontDescription" name="YSDisplay-Bold" family="YS Display" pointSize="23"/>
                                         <color key="textColor" name="YP White"/>
                                         <nil key="highlightedColor"/>
@@ -111,7 +116,7 @@
                             <constraint firstItem="Ury-Vf-95f" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CV3-N4-ucv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ury-Vf-95f" secondAttribute="bottom" id="KIq-HZ-Pqc"/>
                             <constraint firstItem="miN-KG-WFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="LFG-3I-icU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="miN-KG-WFr" secondAttribute="bottom" constant="55" id="Od0-Al-pcB"/>
+                            <constraint firstItem="Ury-Vf-95f" firstAttribute="top" secondItem="XPX-1c-VJM" secondAttribute="bottom" constant="20" id="Pti-B7-5vz"/>
                             <constraint firstItem="Ury-Vf-95f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eQG-b8-EUM"/>
                         </constraints>
                     </view>
